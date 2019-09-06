@@ -1,76 +1,23 @@
 //Dice Program 
 
-int leftResult;
-int midResult;
-int rightResult;
+background(255);
+size(500, 500);
 
-void setup() {
-  size(700, 500);
-  background(255);
-}
+//Random Numbers 
 
-void draw() {
-  //reset background 
-  fill(255);
-  
-  //Left die shape
-  stroke(0);
-  strokeWeight(2);
-  fill(#B4B1B1);
-  rect(100, 300, 100, 100, 10);
-  //color & size of left die result
-  fill(#FF0000);
-  textSize(30);
-  //display result for left die
-  text(leftResult, 140, 360);
-  //Middle Die shape
-  stroke(0);
-  strokeWeight(2);
-  fill(#B4B1B1);
-  rect(300, 300, 100, 100, 10);
-  //color & size of mid die result
-  fill(#FF0000);
-  textSize(30);
-  //display result for mid die
-  text(midResult, 340, 360);
-  //Right Die shape
-  stroke(0);
-  strokeWeight(2);
-  fill(#B4B1B1);
-  rect(500, 300, 100, 100, 10);
-  //color & size of right die result
-  fill(#FF0000);
-  textSize(30);
-  //display result for right die
-  text(rightResult, 540, 360);
-}
-
-void mouseClicked() {
-  //reroll left die
-  leftResult = int(random(1, 6));
-  //reroll mid die
-  midResult = int(random(1, 6));
-  //reroll right die 
-  rightResult = int(random(1, 6));
-}
+fill(#FF0000);
+textSize(30);
+text(int(random(1,6)),width/2, height/2);
 
 
+//float Die = random(1, 6);
+//int F = floor(Die);
+//  println(F);
 
+////shape 
 
+//textSize(60);
+//fill(#FF0000);
+//text("Die",2,250);
 
-//fill(0);
-//stroke(0);
-//strokeWeight(0);
-//line(100, 0, 100, 700);
-//line(200, 0, 200, 700);
-//line(300, 0, 300, 700);
-//line(400, 0, 400, 700);
-//line(500, 0, 500, 700);
-//line(600, 0, 600, 700);
-
-//line(0, 100, 700, 100);
-//line(0, 200, 700, 200);
-//line(0, 300, 700, 300);
-//line(0, 400, 700, 400);
-//line(0, 500, 700, 500);
-//Left Die
+//spicy stuff 
