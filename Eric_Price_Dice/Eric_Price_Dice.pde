@@ -1,10 +1,12 @@
 //Dice Program 
 
+//INT
 int leftResult;
 int midResult;
 int rightResult;
 
 void setup() {
+  //sets up window
   size(700, 500);
   background(255);
 }
@@ -12,7 +14,30 @@ void setup() {
 void draw() {
   //reset background 
   fill(255);
-  
+  //grid for tests
+  //fill(0);
+  //stroke(0);
+  //strokeWeight(0);
+  //line(100, 0, 100, 700);
+  //line(200, 0, 200, 700);
+  //line(300, 0, 300, 700);
+  //line(400, 0, 400, 700);
+  //line(500, 0, 500, 700);
+  //line(600, 0, 600, 700);
+
+  //line(0, 100, 700, 100);
+  //line(0, 200, 700, 200);
+  //line(0, 300, 700, 300);
+  //line(0, 400, 700, 400);
+  //line(0, 500, 700, 500);
+  //displays what code do does
+  fill(#FF0011);
+  textSize(70);
+  text("Dice Simulator!", 95, 100);
+  //explains what to do
+  fill(#FF0011);
+  textSize(20);
+  text("Click the mouse to reroll and try to match all 3 die!", 100, 200);
   //Left die shape
   stroke(0);
   strokeWeight(2);
@@ -53,24 +78,3 @@ void mouseClicked() {
   //reroll right die 
   rightResult = int(random(1, 6));
 }
-
-
-
-
-
-//fill(0);
-//stroke(0);
-//strokeWeight(0);
-//line(100, 0, 100, 700);
-//line(200, 0, 200, 700);
-//line(300, 0, 300, 700);
-//line(400, 0, 400, 700);
-//line(500, 0, 500, 700);
-//line(600, 0, 600, 700);
-
-//line(0, 100, 700, 100);
-//line(0, 200, 700, 200);
-//line(0, 300, 700, 300);
-//line(0, 400, 700, 400);
-//line(0, 500, 700, 500);
-//Left Die
