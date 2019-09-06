@@ -1,4 +1,4 @@
-//Dice Program 
+//Dice Program by Eric Price
 
 //INT
 int leftResult;
@@ -37,7 +37,7 @@ void draw() {
   //explains what to do
   fill(#FF0011);
   textSize(20);
-  text("Click the mouse to reroll and try to match all 3 die!", 100, 200);
+  text("Click the mouse to reroll and try to match all dice!", 100, 200);
   //Left die shape
   stroke(0);
   strokeWeight(2);
@@ -78,3 +78,5 @@ void mouseClicked() {
   //reroll right die 
   rightResult = int(random(1, 6));
 }
+
+//nothing more
