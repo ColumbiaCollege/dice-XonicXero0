@@ -72,11 +72,11 @@ void draw() {
 
 void mouseClicked() {
   //reroll left die
-  leftResult = int(random(1, 6));
+  leftResult = int(random(1, 7));
   //reroll mid die
-  midResult = int(random(1, 6));
+  midResult = int(random(1, 7));
   //reroll right die 
-  rightResult = int(random(1, 6));
+  rightResult = int(random(1, 7));
 }
 
 //nothing more
